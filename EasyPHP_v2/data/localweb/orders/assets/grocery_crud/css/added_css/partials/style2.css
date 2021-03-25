@@ -1,0 +1,65 @@
+@import url(./fonts.css); 
+
+@import url(./partials/_variables.css);
+
+@import url(./partials/_global.css); 
+
+/*start navigation*/ 
+
+.popover{
+    max-width: 100%; 
+}
+
+.navbar-toggler {
+    padding: 1.7em 20px ; 
+}
+.navbar-nav {
+    text-align: center;
+}
+.nav-item { 
+    color: rgb(0, 255, 0);  
+}
+
+.nav-item.nav-link {
+    font-family: var(--Cormorant); 
+    text-transform: none; 
+    font-weight: 500; 
+    padding: 1.7rem ; 
+
+}
+.nav-item.nav-link:hover { 
+    color: white ; 
+    transition: background .6s ease; 
+}
+.navbar.navbar-dark.bg-dark {
+    padding: 1rem 10rem; 
+}
+.btn-outline-success {
+    color: rgb(0, 255, 0);
+    border-color: rgb(0, 255, 42); 
+    transition: background .6s ease; 
+  
+}
+.btn-outline-success:hover {
+    background-color: rgb(85, 108, 129);
+    border-color: rgb(0, 255, 13);
+}
+
+.btn.btn-outline-success.my-2.my-sm-0:active {
+    background-color: rgb(30, 255, 0); 
+    border-color: white;  
+    outline:aqua auto 5px; 
+}
+.btn.btn-outline-success.my-2.my-sm-0:focus {
+    outline:aqua auto 5px; 
+}
+.form-control { 
+    border-color: aqua; 
+}
+.form-control:hover{ 
+    background-origin: rgb(85, 108, 129);
+}
+.d-inline-block.align-top
+{
+    border-radius: 5px;
+}
