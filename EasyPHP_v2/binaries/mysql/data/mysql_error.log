@@ -1925,3 +1925,171 @@ InnoDB: Last MySQL binlog file position 0 8551, file name mysql-bin.000035
 2021-03-25 17:38:35 3300 [Note] Server hostname (bind-address): '127.0.0.1'; port: 3306
 2021-03-25 17:38:35 3300 [Note]   - '127.0.0.1' resolves to '127.0.0.1';
 2021-03-25 17:38:35 3300 [Note] Server socket created on IP: '127.0.0.1'.
+2021-03-26 12:07:24 14724 [Note] Plugin 'FEDERATED' is disabled.
+2021-03-26 12:07:24 14724 [Note] InnoDB: The InnoDB memory heap is disabled
+2021-03-26 12:07:24 14724 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2021-03-26 12:07:24 14724 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2021-03-26 12:07:24 14724 [Note] InnoDB: Not using CPU crc32 instructions
+2021-03-26 12:07:24 14724 [Note] InnoDB: Initializing buffer pool, size = 20.0M
+2021-03-26 12:07:24 14724 [Note] InnoDB: Completed initialization of buffer pool
+2021-03-26 12:07:24 14724 [Note] InnoDB: Highest supported file format is Barracuda.
+2021-03-26 12:07:24 14724 [Note] InnoDB: The log sequence numbers 2977339 and 2977339 in ibdata files do not match the log sequence number 2977349 in the ib_logfiles!
+2021-03-26 12:07:24 14724 [Note] InnoDB: Database was not shutdown normally!
+2021-03-26 12:07:24 14724 [Note] InnoDB: Starting crash recovery.
+2021-03-26 12:07:24 14724 [Note] InnoDB: Reading tablespace information from the .ibd files...
+2021-03-26 12:07:24 14724 [Note] InnoDB: Restoring possible half-written data pages 
+2021-03-26 12:07:24 14724 [Note] InnoDB: from the doublewrite buffer...
+InnoDB: Last MySQL binlog file position 0 8551, file name mysql-bin.000035
+2021-03-26 12:07:25 14724 [Note] InnoDB: 128 rollback segment(s) are active.
+2021-03-26 12:07:25 14724 [Note] InnoDB: Waiting for purge to start
+2021-03-26 12:07:25 14724 [Note] InnoDB: 5.6.15 started; log sequence number 2977349
+2021-03-26 12:07:25 14724 [Note] Recovering after a crash using mysql-bin
+2021-03-26 12:07:25 14724 [Note] Starting crash recovery...
+2021-03-26 12:07:25 14724 [Note] Crash recovery finished.
+2021-03-26 12:07:25 14724 [Note] Server hostname (bind-address): '127.0.0.1'; port: 3306
+2021-03-26 12:07:25 14724 [Note]   - '127.0.0.1' resolves to '127.0.0.1';
+2021-03-26 12:07:25 14724 [Note] Server socket created on IP: '127.0.0.1'.
+2021-03-27 09:54:38 16224 [Note] Plugin 'FEDERATED' is disabled.
+2021-03-27 09:54:38 16224 [Note] InnoDB: The InnoDB memory heap is disabled
+2021-03-27 09:54:38 16224 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2021-03-27 09:54:38 16224 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2021-03-27 09:54:38 16224 [Note] InnoDB: Not using CPU crc32 instructions
+2021-03-27 09:54:38 16224 [Note] InnoDB: Initializing buffer pool, size = 20.0M
+2021-03-27 09:54:38 16224 [Note] InnoDB: Completed initialization of buffer pool
+2021-03-27 09:54:38 16224 [Note] InnoDB: Highest supported file format is Barracuda.
+2021-03-27 09:54:38 16224 [Note] InnoDB: The log sequence numbers 2977339 and 2977339 in ibdata files do not match the log sequence number 2977359 in the ib_logfiles!
+2021-03-27 09:54:38 16224 [Note] InnoDB: Database was not shutdown normally!
+2021-03-27 09:54:38 16224 [Note] InnoDB: Starting crash recovery.
+2021-03-27 09:54:38 16224 [Note] InnoDB: Reading tablespace information from the .ibd files...
+2021-03-27 09:54:38 16224 [Note] InnoDB: Restoring possible half-written data pages 
+2021-03-27 09:54:38 16224 [Note] InnoDB: from the doublewrite buffer...
+InnoDB: Last MySQL binlog file position 0 8551, file name mysql-bin.000035
+2021-03-27 09:54:38 16224 [Note] InnoDB: 128 rollback segment(s) are active.
+2021-03-27 09:54:38 16224 [Note] InnoDB: Waiting for purge to start
+2021-03-27 09:54:38 16224 [Note] InnoDB: 5.6.15 started; log sequence number 2977359
+2021-03-27 09:54:38 16224 [Note] Recovering after a crash using mysql-bin
+2021-03-27 09:54:38 16224 [Note] Starting crash recovery...
+2021-03-27 09:54:38 16224 [Note] Crash recovery finished.
+2021-03-27 09:54:39 16224 [Note] Server hostname (bind-address): '127.0.0.1'; port: 3306
+2021-03-27 09:54:39 16224 [Note]   - '127.0.0.1' resolves to '127.0.0.1';
+2021-03-27 09:54:39 16224 [Note] Server socket created on IP: '127.0.0.1'.
+2021-03-27 16:51:28 4636 [Note] Plugin 'FEDERATED' is disabled.
+2021-03-27 16:51:28 4636 [Note] InnoDB: The InnoDB memory heap is disabled
+2021-03-27 16:51:28 4636 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2021-03-27 16:51:28 4636 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2021-03-27 16:51:28 4636 [Note] InnoDB: Not using CPU crc32 instructions
+2021-03-27 16:51:28 4636 [Note] InnoDB: Initializing buffer pool, size = 20.0M
+2021-03-27 16:51:28 4636 [Note] InnoDB: Completed initialization of buffer pool
+2021-03-27 16:51:28 4636 [Note] InnoDB: Highest supported file format is Barracuda.
+2021-03-27 16:51:28 4636 [Note] InnoDB: The log sequence numbers 2977339 and 2977339 in ibdata files do not match the log sequence number 2977369 in the ib_logfiles!
+2021-03-27 16:51:28 4636 [Note] InnoDB: Database was not shutdown normally!
+2021-03-27 16:51:28 4636 [Note] InnoDB: Starting crash recovery.
+2021-03-27 16:51:28 4636 [Note] InnoDB: Reading tablespace information from the .ibd files...
+2021-03-27 16:51:28 4636 [Note] InnoDB: Restoring possible half-written data pages 
+2021-03-27 16:51:28 4636 [Note] InnoDB: from the doublewrite buffer...
+InnoDB: Last MySQL binlog file position 0 8551, file name mysql-bin.000035
+2021-03-27 16:51:29 4636 [Note] InnoDB: 128 rollback segment(s) are active.
+2021-03-27 16:51:29 4636 [Note] InnoDB: Waiting for purge to start
+2021-03-27 16:51:29 4636 [Note] InnoDB: 5.6.15 started; log sequence number 2977369
+2021-03-27 16:51:29 4636 [Note] Recovering after a crash using mysql-bin
+2021-03-27 16:51:29 4636 [Note] Starting crash recovery...
+2021-03-27 16:51:29 4636 [Note] Crash recovery finished.
+2021-03-27 16:51:29 4636 [Note] Server hostname (bind-address): '127.0.0.1'; port: 3306
+2021-03-27 16:51:29 4636 [Note]   - '127.0.0.1' resolves to '127.0.0.1';
+2021-03-27 16:51:29 4636 [Note] Server socket created on IP: '127.0.0.1'.
+2021-03-28 12:43:54 10716 [Note] Plugin 'FEDERATED' is disabled.
+2021-03-28 12:43:54 10716 [Note] InnoDB: The InnoDB memory heap is disabled
+2021-03-28 12:43:54 10716 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2021-03-28 12:43:54 10716 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2021-03-28 12:43:54 10716 [Note] InnoDB: Not using CPU crc32 instructions
+2021-03-28 12:43:54 10716 [Note] InnoDB: Initializing buffer pool, size = 20.0M
+2021-03-28 12:43:54 10716 [Note] InnoDB: Completed initialization of buffer pool
+2021-03-28 12:43:54 10716 [Note] InnoDB: Highest supported file format is Barracuda.
+2021-03-28 12:43:54 10716 [Note] InnoDB: The log sequence numbers 2977339 and 2977339 in ibdata files do not match the log sequence number 2977379 in the ib_logfiles!
+2021-03-28 12:43:54 10716 [Note] InnoDB: Database was not shutdown normally!
+2021-03-28 12:43:54 10716 [Note] InnoDB: Starting crash recovery.
+2021-03-28 12:43:54 10716 [Note] InnoDB: Reading tablespace information from the .ibd files...
+2021-03-28 12:43:54 10716 [Note] InnoDB: Restoring possible half-written data pages 
+2021-03-28 12:43:54 10716 [Note] InnoDB: from the doublewrite buffer...
+InnoDB: Last MySQL binlog file position 0 8551, file name mysql-bin.000035
+2021-03-28 12:43:57 10716 [Note] InnoDB: 128 rollback segment(s) are active.
+2021-03-28 12:43:57 10716 [Note] InnoDB: Waiting for purge to start
+2021-03-28 12:43:58 10716 [Note] InnoDB: 5.6.15 started; log sequence number 2977379
+2021-03-28 12:43:58 10716 [Note] Recovering after a crash using mysql-bin
+2021-03-28 12:43:58 10716 [Note] Starting crash recovery...
+2021-03-28 12:43:58 10716 [Note] Crash recovery finished.
+2021-03-28 12:43:58 10716 [Note] Server hostname (bind-address): '127.0.0.1'; port: 3306
+2021-03-28 12:43:58 10716 [Note]   - '127.0.0.1' resolves to '127.0.0.1';
+2021-03-28 12:43:58 10716 [Note] Server socket created on IP: '127.0.0.1'.
+2021-03-29 09:52:37 15260 [Note] Plugin 'FEDERATED' is disabled.
+2021-03-29 09:52:37 15260 [Note] InnoDB: The InnoDB memory heap is disabled
+2021-03-29 09:52:37 15260 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2021-03-29 09:52:37 15260 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2021-03-29 09:52:37 15260 [Note] InnoDB: Not using CPU crc32 instructions
+2021-03-29 09:52:37 15260 [Note] InnoDB: Initializing buffer pool, size = 20.0M
+2021-03-29 09:52:37 15260 [Note] InnoDB: Completed initialization of buffer pool
+2021-03-29 09:52:37 15260 [Note] InnoDB: Highest supported file format is Barracuda.
+2021-03-29 09:52:37 15260 [Note] InnoDB: The log sequence numbers 2977339 and 2977339 in ibdata files do not match the log sequence number 2977389 in the ib_logfiles!
+2021-03-29 09:52:37 15260 [Note] InnoDB: Database was not shutdown normally!
+2021-03-29 09:52:37 15260 [Note] InnoDB: Starting crash recovery.
+2021-03-29 09:52:37 15260 [Note] InnoDB: Reading tablespace information from the .ibd files...
+2021-03-29 09:52:37 15260 [Note] InnoDB: Restoring possible half-written data pages 
+2021-03-29 09:52:37 15260 [Note] InnoDB: from the doublewrite buffer...
+InnoDB: Last MySQL binlog file position 0 8551, file name mysql-bin.000035
+2021-03-29 09:52:38 15260 [Note] InnoDB: 128 rollback segment(s) are active.
+2021-03-29 09:52:38 15260 [Note] InnoDB: Waiting for purge to start
+2021-03-29 09:52:38 15260 [Note] InnoDB: 5.6.15 started; log sequence number 2977389
+2021-03-29 09:52:38 15260 [Note] Recovering after a crash using mysql-bin
+2021-03-29 09:52:38 15260 [Note] Starting crash recovery...
+2021-03-29 09:52:38 15260 [Note] Crash recovery finished.
+2021-03-29 09:52:38 15260 [Note] Server hostname (bind-address): '127.0.0.1'; port: 3306
+2021-03-29 09:52:38 15260 [Note]   - '127.0.0.1' resolves to '127.0.0.1';
+2021-03-29 09:52:38 15260 [Note] Server socket created on IP: '127.0.0.1'.
+2021-03-29 19:18:18 9664 [Note] Plugin 'FEDERATED' is disabled.
+2021-03-29 19:18:18 9664 [Note] InnoDB: The InnoDB memory heap is disabled
+2021-03-29 19:18:18 9664 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2021-03-29 19:18:18 9664 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2021-03-29 19:18:18 9664 [Note] InnoDB: Not using CPU crc32 instructions
+2021-03-29 19:18:18 9664 [Note] InnoDB: Initializing buffer pool, size = 20.0M
+2021-03-29 19:18:18 9664 [Note] InnoDB: Completed initialization of buffer pool
+2021-03-29 19:18:18 9664 [Note] InnoDB: Highest supported file format is Barracuda.
+2021-03-29 19:18:18 9664 [Note] InnoDB: The log sequence numbers 2977339 and 2977339 in ibdata files do not match the log sequence number 2985356 in the ib_logfiles!
+2021-03-29 19:18:18 9664 [Note] InnoDB: Database was not shutdown normally!
+2021-03-29 19:18:18 9664 [Note] InnoDB: Starting crash recovery.
+2021-03-29 19:18:18 9664 [Note] InnoDB: Reading tablespace information from the .ibd files...
+2021-03-29 19:18:18 9664 [Note] InnoDB: Restoring possible half-written data pages 
+2021-03-29 19:18:18 9664 [Note] InnoDB: from the doublewrite buffer...
+InnoDB: Last MySQL binlog file position 0 8551, file name mysql-bin.000035
+2021-03-29 19:18:18 9664 [Note] InnoDB: 128 rollback segment(s) are active.
+2021-03-29 19:18:18 9664 [Note] InnoDB: Waiting for purge to start
+2021-03-29 19:18:18 9664 [Note] InnoDB: 5.6.15 started; log sequence number 2985356
+2021-03-29 19:18:18 9664 [Note] Recovering after a crash using mysql-bin
+2021-03-29 19:18:18 9664 [Note] Starting crash recovery...
+2021-03-29 19:18:18 9664 [Note] Crash recovery finished.
+2021-03-29 19:18:19 9664 [Note] Server hostname (bind-address): '127.0.0.1'; port: 3306
+2021-03-29 19:18:19 9664 [Note]   - '127.0.0.1' resolves to '127.0.0.1';
+2021-03-29 19:18:19 9664 [Note] Server socket created on IP: '127.0.0.1'.
+2021-03-30 10:59:39 13180 [Note] Plugin 'FEDERATED' is disabled.
+2021-03-30 10:59:39 13180 [Note] InnoDB: The InnoDB memory heap is disabled
+2021-03-30 10:59:39 13180 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2021-03-30 10:59:39 13180 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2021-03-30 10:59:39 13180 [Note] InnoDB: Not using CPU crc32 instructions
+2021-03-30 10:59:39 13180 [Note] InnoDB: Initializing buffer pool, size = 20.0M
+2021-03-30 10:59:39 13180 [Note] InnoDB: Completed initialization of buffer pool
+2021-03-30 10:59:39 13180 [Note] InnoDB: Highest supported file format is Barracuda.
+2021-03-30 10:59:40 13180 [Note] InnoDB: The log sequence numbers 2977339 and 2977339 in ibdata files do not match the log sequence number 2986850 in the ib_logfiles!
+2021-03-30 10:59:40 13180 [Note] InnoDB: Database was not shutdown normally!
+2021-03-30 10:59:40 13180 [Note] InnoDB: Starting crash recovery.
+2021-03-30 10:59:40 13180 [Note] InnoDB: Reading tablespace information from the .ibd files...
+2021-03-30 10:59:40 13180 [Note] InnoDB: Restoring possible half-written data pages 
+2021-03-30 10:59:40 13180 [Note] InnoDB: from the doublewrite buffer...
+InnoDB: Last MySQL binlog file position 0 8551, file name mysql-bin.000035
+2021-03-30 10:59:40 13180 [Note] InnoDB: 128 rollback segment(s) are active.
+2021-03-30 10:59:40 13180 [Note] InnoDB: Waiting for purge to start
+2021-03-30 10:59:40 13180 [Note] InnoDB: 5.6.15 started; log sequence number 2986850
+2021-03-30 10:59:40 13180 [Note] Recovering after a crash using mysql-bin
+2021-03-30 10:59:40 13180 [Note] Starting crash recovery...
+2021-03-30 10:59:40 13180 [Note] Crash recovery finished.
+2021-03-30 10:59:40 13180 [Note] Server hostname (bind-address): '127.0.0.1'; port: 3306
+2021-03-30 10:59:40 13180 [Note]   - '127.0.0.1' resolves to '127.0.0.1';
+2021-03-30 10:59:40 13180 [Note] Server socket created on IP: '127.0.0.1'.

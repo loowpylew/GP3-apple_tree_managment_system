@@ -134,6 +134,99 @@ class Main extends CI_Controller {
 		$this->load->view('orderline_view.php', $output);
 	}
 	
+	public function appleVariety()
+	{	
+		$this->load->view('header');
+		$crud = new grocery_CRUD();
+		$crud->set_theme('datatables');
+		
+		
+		$crud->set_table('apple_variety');
+		$crud->set_subject('variety');
+
+		$crud->columns('variety_ID', 'fruit', 'fruit_colour');
+		$crud->fields('fruit', 'fruit_colour');
+		$crud->required_fields('fruit', 'fruit_colour');
+
+		$output = $crud->render();
+		$this->appleVariety_output($output);
+	}
+	
+	function appleVariety_output($output = null)
+	{
+		$this->load->view('apple_variety.php', $output);
+	}
+
+	public function trees()
+	{	
+		$this->load->view('header');
+		$crud = new grocery_CRUD();
+		$crud->set_theme('datatables');
+		$crud->set_table('trees');
+		$crud->set_subject('tree');
+		$crud->columns('tree_ID', 'variety_ID', 'retailPrice');
+		$crud->fields('retailPrice', 'variety_ID');
+		$crud->required_fields('retailPrice', 'variety_ID');
+
+		$crud->set_relation('variety_ID', 'apple_variety', 'fruit');
+		$crud->display_as('variety_ID', 'Variety');
+		
+		$output = $crud->render();
+		$this->tree_output($output);
+	}
+	
+	function tree_output($output = null)
+	{
+		$this->load->view('tree.php', $output);
+	}
+
+	public function orchard()
+	{	
+		$this->load->view('header');
+		$crud = new grocery_CRUD();
+		$crud->set_theme('datatables');
+		$crud->set_table('orchard');
+		$crud->set_subject('orchard');
+		$crud->columns('orchard_ID', 'locationName');
+		$crud->fields('locationName');
+		$crud->required_fields('locationName');
+		
+		$crud->display_as('variety_ID', 'Variety');
+
+		$output = $crud->render();
+		$this->orchard_output($output);
+	}
+	
+	function orchard_output($output = null)
+	{
+		$this->load->view('orchard.php', $output);
+	}
+
+	public function treesPlanted()
+	{	
+		$this->load->view('header');
+		$crud = new grocery_CRUD();
+		$crud->set_theme('datatables');
+		$crud->set_table('trees_planted');
+		$crud->set_subject('Planted tree');
+		$crud->columns('tree_ID', 'orchard_ID', 'datePlanted');
+		$crud->fields('tree_ID','orchard_ID', 'datePlanted');
+		$crud->required_fields('tree_ID','orchard_ID', 'datePlanted');
+		$crud->set_relation('tree_ID', 'trees', 'tree_ID');
+		$crud->set_relation('orchard_ID', 'orchard', 'orchard_ID');
+		
+		
+
+		
+		$output = $crud->render();
+		$this->treesPlanted_output($output);
+	}
+	
+	function treesPlanted_output($output = null)
+	{
+		$this->load->view('treesPlanted.php', $output);
+	}
+
 	public function querynav()
 	{	
 		$this->load->view('header');

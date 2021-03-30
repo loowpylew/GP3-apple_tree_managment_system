@@ -44,13 +44,12 @@
   .Grow_image > img {
     width: 30%; 
     height: 30%; 
-    margin-left: 70%; 
-    margin-top: -28%;
+    margin-left: 68%; 
+    margin-top: -40%;
  }
  .Jobs2DoTable {
    margin-top: 5%; 
  }
-
 </style>
   </head>
   <body>
@@ -66,7 +65,12 @@
                   <li><a onclick="items()" class="nav-item nav-link" href='<?php echo site_url('main/items')?>'>Items</a></li>
                   <li><a onclick="customers()" class="nav-item nav-link" href='<?php echo site_url('main/customers')?>'>Customers</a></li>
                   <li><a onclick="orderline()" class="nav-item nav-link" href='<?php echo site_url('main/orderline')?>'>OrderLine</a></li>
-                  <li><a onclick="suppliers()" class="nav-item nav-link" href='<?php echo site_url('main/suppliers')?>'>Suppliers</a></li>
+                  <li><a onclick="appleVariety()" class="nav-item nav-link" href='<?php echo site_url('main/applevariety')?>'>Apple Variety</a></li>
+                  <li><a onclick="trees()" class="nav-item nav-link" href='<?php echo site_url('main/trees')?>'>Trees</a></li>
+                  <li><a onclick="orchard()" class="nav-item nav-link" href='<?php echo site_url('main/orchard')?>'>Orchard</a></li>
+                  <li><a onclick="treesPlanted()" class="nav-item nav-link" href='<?php echo site_url('main/treesPlanted')?>'>Trees Planted</a></li>
+                  
+
             </div>
           </div>
         </div>
@@ -118,7 +122,10 @@
       <textarea id="items" cols="0" rows="0">Items.</textarea>
       <textarea id="customers" cols="0" rows="0">Customers.</textarea>
       <textarea id="orderline" cols="0" rows="0">OrderLine.</textarea>
-      <textarea id="suppliers" cols="0" rows="0">Suppliers.</textarea>
+      <textarea id="apple-variety" cols="0" rows="0">Apple Variety.</textarea>
+      <textarea id="trees" cols="0" rows="0">Trees.</textarea>
+      <textarea id="orchard" cols="0" rows="0">Orchard</textarea>
+      <textarea id="trees-planted" cols="0" rows="0">Trees Planted.</textarea>
 
       <textarea id="txt" cols="0" rows="0"  >What we are about? Here at Hatfields Tree suppliers,
        we offer a wide of range of tree varieties such as Plum, 
@@ -291,13 +298,15 @@
     <!-- =========================== End Main Area =========================== -->
     <script type="text/javascript" src="https://code.responsivevoice.org/responsivevoice.js"></script>
     <script>
-
             document.getElementById('home').style.display = "none";
             document.getElementById('orders').style.display = "none";
             document.getElementById('items').style.display = "none";
             document.getElementById('customers').style.display = "none";
             document.getElementById('orderline').style.display = "none";
-            document.getElementById('suppliers').style.display = "none";
+            document.getElementById('apple-variety').style.display = "none";
+            document.getElementById('trees').style.display = "none";
+            document.getElementById('orchard').style.display = "none";
+            document.getElementById('trees-planted').style.display = "none";
             
             document.getElementById('txt').style.display = "none";
             document.getElementById('Help').style.display = "none"; 
@@ -346,8 +355,24 @@
               var text = document.getElementById('orderline').value;
               responsiveVoice.speak(text);
             }
-            function suppliers(){
-              var text = document.getElementById('suppliers').value;
+            function treesPara(){
+              var text = document.getElementById('trees-Para').value;
+              responsiveVoice.speak(text);
+            }
+            function appleVariety(){
+              var text = document.getElementById('apple-variety').value;
+              responsiveVoice.speak(text);
+            }
+            function trees(){
+              var text = document.getElementById('trees').value;
+              responsiveVoice.speak(text);
+            }
+            function orchard(){
+              var text = document.getElementById('orchard').value;
+              responsiveVoice.speak(text);
+            }
+            function treesPlanted(){
+              var text = document.getElementById('trees-planted').value;
               responsiveVoice.speak(text);
             }
 
@@ -455,7 +480,7 @@
               sanitize: false,
               title : 'USER HELP',
               content:  '<h2>FREQUENTLY ASKED QUESTIONS</h2>\
-<input type="text" id="myInput" onclick="enterQuestion()" placeholder="Enter your question..." >\
+<input type="text" id="myInput" onkeyup="myFunction()" onclick="enterQuestion()" placeholder="Enter your question..." >\
 <table id="myTable">\
   <tr class="header">\
     <th style="width:60%;">Question</th>\
@@ -517,28 +542,27 @@
           });
      </script>
 
-
-
-    <script>
+<script>
     function myFunction() {
-  var input, filter, table, tr, td, i, txtValue;
-  input = document.getElementById("myInput");
-  filter = input.value.toUpperCase();
-  table = document.getElementById("myTable");
-  tr = table.getElementsByTagName("tr");
-  for (i = 0; i < tr.length; i++) {
-    td = tr[i].getElementsByTagName("td")[0];
-    if (td) {
-      txtValue = td.textContent || td.innerText;
-      if (txtValue.toUpperCase().indexOf(filter) > -1) {
-        tr[i].style.display = "";
-      } else {
-        tr[i].style.display = "none";
-      }
-    }       
+      var input, filter, table, tr, td, i, txtValue;
+      input = document.getElementById("myInput");
+      filter = input.value.toUpperCase();
+      table = document.getElementById("myTable");
+      tr = table.getElementsByTagName("tr");
+      for (i = 0; i < tr.length; i++) {
+        td = tr[i].getElementsByTagName("td")[0];
+        if (td) {
+        txtValue = td.textContent || td.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+          tr[i].style.display = ""; } 
+        else {
+          tr[i].style.display = "none";
+        }
+      }       
+    }
   }
-}
 </script>
+
  <!--[data-toggle="popover2"]-->
 <script type="text/javascript">
     $(document).ready(function(){
@@ -620,17 +644,17 @@
                           <div class="Plant"><h5 class="media-heading3">Plant</h5>\
                           <p> If you don’t have an apple tree in your garden, planting one is a good investment,\
                               for there is nothing like eating the fresh fruit straight from the tree in autumn.\
-                              It\'s generally recommended to <a href= https://www.rhs.org.uk/Advice/profile?pid=331> buy named cultivars <br> of apples </a> from a reputable specialist nursery.\
+                              It\'s generally recommended to <a href= https://www.rhs.org.uk/Advice/profile?pid=331> buy named cultivars of apples </a> from a reputable specialist nursery.\
                               They are supplied as young trees ready for planting. Sowing apples from their pips would just take too long,\
-                              and just as children are not identical to their parents, fruit <br> trees are not true to type when reproduced from seed.\
+                              and just as children are not identical to their parents, fruit trees are not true to type when reproduced from seed.\
                               The ideal position for an apple tree is a sunny, sheltered site, well away from any frost pockets. Avoid poorly-drained or shallow soils.\
-                              You will see apple trees <br> for sale in two forms: bare-root stock (as the name suggested,\
-                              the roots are exposed when you purchase these plants) or in containers. Bare-root plants should be planted from late autumn until early spring;<br>\
+                              You will see apple trees for sale in two forms: bare-root stock (as the name suggested,\
+                              the roots are exposed when you purchase these plants) or in containers. Bare-root plants should be planted from late autumn until early spring;\
                               containerised plants can be planted at any time of year, though winter is preferred.\
                               If planting in the garden, dig a hole no deeper than the roots,\
-                              but up to three times the diameter of the root system <br> (spread the roots out on the ground before digging the hole).\
+                              but up to three times the diameter of the root system (spread the roots out on the ground before digging the hole).\
                               If the sides or base of the planting hole are really hard, break the soil up with a fork before planting.\
-                              Place the plant in the planting hole and carefully <br> refill, placing soil between and around all the roots to eliminate air pockets.\
+                              Place the plant in the planting hole and carefully refill, placing soil between and around all the roots to eliminate air pockets.\
                               Firm the soil gently by stepping on it.\
                           </p><input onclick="plant()" type="button" value="Speak">\
                           <div class="Grow_image"><img src="assets/images/apples-growing.jpg" class="mr-3" alt="Sample Image"></div>\
@@ -638,7 +662,6 @@
                   });
                 });
 </script> 
-
 
   </body>
 </html>

@@ -498,3 +498,72 @@
 25/03 17:38:31 EasyPHP ServerBase::TimerProc : GetProcessVersion MySQL (pid: 16944) error 5
 25/03 17:38:33 EasyPHP Apache CreateProcess "C:\EASYPH~2\binaries\apache\bin\eds-httpd.exe"
 25/03 17:38:34 EasyPHP CreateProcess "C:\EASYPH~2\binaries\mysql\bin\eds-mysqld.exe --defaults-file="C:\EASYPH~2\binaries\mysql\my.ini" --language=english"
+25/03 23:47:06 EasyPHP EasyPHP Stop the servers
+25/03 23:47:06 EasyPHP Apache stop event: ap20928_shutdown
+25/03 23:47:06 EasyPHP Apache::StopExe stop event ap20928_shutdown fail : 2
+25/03 23:47:08 EasyPHP MySqlSutdown event = MySQLShutdown3300
+25/03 23:47:08 EasyPHP MySqlSutdown event open fail = 2
+26/03 12:06:48 EasyPHP EasyPHP Servers starting
+26/03 12:06:50 EasyPHP Apache CreateProcess "C:\EASYPH~2\binaries\apache\bin\eds-httpd.exe"
+26/03 12:06:50 EasyPHP MySql   MySQL port (3306) is already used by another application ! Close this application and try to run again the server. To close this application : open <easyphp folder>/binaries/tools/cports/cports.exe, find the line with the port already used in the column "Local Port", right click and choose "Kill Processes Of Selected Ports".
+26/03 12:07:09 EasyPHP EasyPHP Check version
+26/03 12:07:23 EasyPHP CreateProcess "C:\EASYPH~2\binaries\mysql\bin\eds-mysqld.exe --defaults-file="C:\EASYPH~2\binaries\mysql\my.ini" --language=english"
+26/03 18:55:45 EasyPHP EasyPHP Stop the servers
+26/03 18:55:46 EasyPHP Apache stop event: ap4736_shutdown
+26/03 18:55:46 EasyPHP MySqlSutdown event = MySQLShutdown14724
+26/03 18:55:46 EasyPHP MySqlSutdown event open fail = 2
+26/03 18:55:49 EasyPHP End EasyPHP...
+27/03 09:54:00 EasyPHP EasyPHP Servers starting
+27/03 09:54:02 EasyPHP Apache CreateProcess "C:\EASYPH~2\binaries\apache\bin\eds-httpd.exe"
+27/03 09:54:02 EasyPHP MySql   MySQL port (3306) is already used by another application ! Close this application and try to run again the server. To close this application : open <easyphp folder>/binaries/tools/cports/cports.exe, find the line with the port already used in the column "Local Port", right click and choose "Kill Processes Of Selected Ports".
+27/03 09:54:08 EasyPHP EasyPHP Check version
+27/03 09:54:37 EasyPHP CreateProcess "C:\EASYPH~2\binaries\mysql\bin\eds-mysqld.exe --defaults-file="C:\EASYPH~2\binaries\mysql\my.ini" --language=english"
+27/03 11:22:17 EasyPHP EasyPHP Stop the servers
+27/03 11:22:17 EasyPHP Apache stop event: ap6772_shutdown
+27/03 11:22:18 EasyPHP MySqlSutdown event = MySQLShutdown16224
+27/03 11:22:18 EasyPHP MySqlSutdown event open fail = 2
+27/03 11:22:19 EasyPHP End EasyPHP...
+27/03 16:46:22 EasyPHP EasyPHP Servers starting
+27/03 16:46:25 EasyPHP Apache CreateProcess "C:\EASYPH~2\binaries\apache\bin\eds-httpd.exe"
+27/03 16:46:25 EasyPHP MySql   MySQL port (3306) is already used by another application ! Close this application and try to run again the server. To close this application : open <easyphp folder>/binaries/tools/cports/cports.exe, find the line with the port already used in the column "Local Port", right click and choose "Kill Processes Of Selected Ports".
+27/03 16:46:36 EasyPHP EasyPHP Check version
+27/03 16:51:27 EasyPHP CreateProcess "C:\EASYPH~2\binaries\mysql\bin\eds-mysqld.exe --defaults-file="C:\EASYPH~2\binaries\mysql\my.ini" --language=english"
+27/03 16:56:39 EasyPHP EasyPHP Stop the servers
+27/03 16:56:39 EasyPHP Apache stop event: ap4352_shutdown
+27/03 16:56:39 EasyPHP Apache::StopExe stop event ap4352_shutdown fail : 2
+27/03 16:56:40 EasyPHP MySqlSutdown event = MySQLShutdown4636
+27/03 16:56:40 EasyPHP MySqlSutdown event open fail = 2
+27/03 16:56:41 EasyPHP End EasyPHP...
+28/03 12:43:26 EasyPHP EasyPHP Servers starting
+28/03 12:43:28 EasyPHP Apache CreateProcess "C:\EASYPH~2\binaries\apache\bin\eds-httpd.exe"
+28/03 12:43:28 EasyPHP MySql   MySQL port (3306) is already used by another application ! Close this application and try to run again the server. To close this application : open <easyphp folder>/binaries/tools/cports/cports.exe, find the line with the port already used in the column "Local Port", right click and choose "Kill Processes Of Selected Ports".
+28/03 12:43:38 EasyPHP EasyPHP Check version
+28/03 12:43:53 EasyPHP CreateProcess "C:\EASYPH~2\binaries\mysql\bin\eds-mysqld.exe --defaults-file="C:\EASYPH~2\binaries\mysql\my.ini" --language=english"
+28/03 19:21:29 EasyPHP EasyPHP Stop the servers
+28/03 19:21:29 EasyPHP Apache stop event: ap13708_shutdown
+28/03 19:21:30 EasyPHP MySqlSutdown event = MySQLShutdown10716
+28/03 19:21:31 EasyPHP End EasyPHP...
+29/03 09:51:58 EasyPHP EasyPHP Servers starting
+29/03 09:52:06 EasyPHP Apache CreateProcess "C:\EASYPH~2\binaries\apache\bin\eds-httpd.exe"
+29/03 09:52:06 EasyPHP MySql   MySQL port (3306) is already used by another application ! Close this application and try to run again the server. To close this application : open <easyphp folder>/binaries/tools/cports/cports.exe, find the line with the port already used in the column "Local Port", right click and choose "Kill Processes Of Selected Ports".
+29/03 09:52:14 EasyPHP EasyPHP Check version
+29/03 09:52:36 EasyPHP CreateProcess "C:\EASYPH~2\binaries\mysql\bin\eds-mysqld.exe --defaults-file="C:\EASYPH~2\binaries\mysql\my.ini" --language=english"
+29/03 18:17:54 EasyPHP EasyPHP Stop the servers
+29/03 18:17:55 EasyPHP Apache stop event: ap12600_shutdown
+29/03 18:17:56 EasyPHP MySqlSutdown event = MySQLShutdown15260
+29/03 18:17:56 EasyPHP MySqlSutdown event open fail = 2
+29/03 19:17:49 EasyPHP EasyPHP Servers starting
+29/03 19:17:50 EasyPHP Apache CreateProcess "C:\EASYPH~2\binaries\apache\bin\eds-httpd.exe"
+29/03 19:17:50 EasyPHP MySql   MySQL port (3306) is already used by another application ! Close this application and try to run again the server. To close this application : open <easyphp folder>/binaries/tools/cports/cports.exe, find the line with the port already used in the column "Local Port", right click and choose "Kill Processes Of Selected Ports".
+29/03 19:18:01 EasyPHP EasyPHP Check version
+29/03 19:18:17 EasyPHP CreateProcess "C:\EASYPH~2\binaries\mysql\bin\eds-mysqld.exe --defaults-file="C:\EASYPH~2\binaries\mysql\my.ini" --language=english"
+29/03 21:14:37 EasyPHP EasyPHP Stop the servers
+29/03 21:14:37 EasyPHP Apache stop event: ap7904_shutdown
+29/03 21:14:38 EasyPHP MySqlSutdown event = MySQLShutdown9664
+29/03 21:14:38 EasyPHP MySqlSutdown event open fail = 2
+29/03 21:14:38 EasyPHP End EasyPHP...
+30/03 10:59:08 EasyPHP EasyPHP Servers starting
+30/03 10:59:10 EasyPHP Apache CreateProcess "C:\EASYPH~2\binaries\apache\bin\eds-httpd.exe"
+30/03 10:59:10 EasyPHP MySql   MySQL port (3306) is already used by another application ! Close this application and try to run again the server. To close this application : open <easyphp folder>/binaries/tools/cports/cports.exe, find the line with the port already used in the column "Local Port", right click and choose "Kill Processes Of Selected Ports".
+30/03 10:59:19 EasyPHP EasyPHP Check version
+30/03 10:59:37 EasyPHP CreateProcess "C:\EASYPH~2\binaries\mysql\bin\eds-mysqld.exe --defaults-file="C:\EASYPH~2\binaries\mysql\my.ini" --language=english"
