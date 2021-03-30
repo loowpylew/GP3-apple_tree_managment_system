@@ -1,0 +1,153 @@
+@media screen and (max-width: 481px){
+    /*import fonts from fonts.css file*/ 
+
+@import url(./fonts.css); 
+
+@import url(./partials/_variables.css);
+
+@import url(./partials/_global.css); 
+
+/*start navigation*/ 
+
+.navbar-toggler {
+    padding: 1.7em 20px ; 
+}
+.navbar-nav {
+    text-align: center;
+}
+.nav-item { 
+    color: rgb(0, 255, 55);  
+}
+
+.nav-item.nav-link {
+    font-family: var(--Cormorant); 
+    text-transform: none; 
+    font-weight: 500; 
+    padding: 1.7rem ; 
+
+}
+.nav-item.nav-link:hover { 
+    color: white ; 
+    transition: background .6s ease; 
+}
+.navbar.navbar-dark.bg-dark {
+    padding: 1rem 10rem; 
+}
+.btn-outline-success {
+    color: rgb(0, 247, 255);
+    border-color: aqua; 
+    transition: background .6s ease; 
+  
+}
+.btn-outline-success:hover {
+    background-color: rgb(85, 108, 129);
+    border-color: aqua;
+}
+
+.btn.btn-outline-success.my-2.my-sm-0:active {
+    background-color: aqua; 
+    border-color: white;  
+    outline:aqua auto 5px; 
+}
+.btn.btn-outline-success.my-2.my-sm-0:focus {
+    outline:aqua auto 5px; 
+}
+.form-control { 
+    border-color: aqua; 
+}
+.form-control:hover{ 
+    background-origin: rgb(85, 108, 129);
+}
+.d-inline-block.align-top
+{
+    border-radius: 5px;
+}
+
+/*end navigation*/ 
+
+
+/*Banner Area*/ 
+
+
+.col-lg-6.col-md-12.site-title {
+    padding-top: 10%;
+    font-weight: 500; 
+}
+.site-banner { 
+    padding-left: 0%;
+
+}
+
+.col-lg-6.col-md-12.site-title > img{
+    padding: 0rem 0rem; 
+}
+/*End Banner Area*/ 
+
+/*Start About Area*/ 
+.about-area{ 
+    padding-top: 15%;
+    padding-left: 5%;
+    padding-bottom: 10%;
+}
+
+.text-uppercase.pt-5{
+    font-style: var(--Cormorant);
+    letter-spacing: 20px ; 
+}
+
+.para { 
+    font-style: var(--Cormorant);
+}
+
+.github > img {
+    height: 60px; 
+    width: 15%; 
+    margin-top: 20%;
+    margin-left: 40%; 
+    margin-bottom: 0%;
+}
+/*End About Area*/
+
+.github > img {
+    height: 63px; 
+    width: 15%; 
+    margin-top: 20%;
+    margin-left: 75%; 
+    margin-bottom: 0%;
+}
+
+.details { 
+    margin-top: 21% ; 
+}
+
+.call-now {
+    margin-top: 0.7% ; 
+    margin-left: 1%
+}
+
+/*About me page*/ 
+
+.title-text.text-uppercase { 
+ font-family: var(--Cormorant);
+}
+
+#carouselExampleCaptions { 
+    margin-top: 10% ; 
+    margin-bottom: 20%;
+}
+
+.video-parent{
+    width: 100%;
+    padding-top: 75%; 
+    height: 0px; 
+    position: relative ; 
+}
+
+.d-block.w-100.child-video { 
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+}

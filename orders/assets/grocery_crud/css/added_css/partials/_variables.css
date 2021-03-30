@@ -1,0 +1,13 @@
+html, body { 
+    margin: 0%;
+    box-sizing: border-box; 
+    width: 100%;
+    height: 100%; 
+}
+
+/*CSS Variables*/ 
+
+:root{
+/*font family variables.*/    
+--CormorantGaramond-light: "Cormorant", cursive; 
+}

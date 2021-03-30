@@ -1,0 +1,65 @@
+.title-text.text-uppercase { 
+    font-size: 2.5rem;
+    font-family: var(--Cormorant);
+}
+
+.title-text {  
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-family: var(--Cormorant);
+} 
+/*Buttons*/ 
+
+.button { 
+    padding: 1rem 2.2rem; 
+    font: normal 500 16px/20px var(--Cormorant); 
+    position: relative ; 
+    border:3px solid transparent; 
+    border-radius: 10px;
+}
+
+.button.primary-button {
+    margin-left: -10%; 
+    background: rgb(7, 238, 38); 
+    background-clip: padding-box; 
+    color: whitesmoke ; 
+    transition: background .6s ease; 
+}
+
+.button.primary-button:hover { 
+    background: whitesmoke;
+    background-clip: padding-box; 
+    color: black ;  
+
+}
+
+.button.primary-button::after, .button.secondary-button::after{ 
+    position: absolute;
+    top:-2px; left:-2px;
+    bottom: -2px; right: -2px;
+    background:  rgb(26, 238, 7); 
+    content: ''; 
+    z-index: -1; 
+    border-radius: 10px; 
+}
+
+.button.secondary-button {
+    background: whitesmoke; 
+    background-clip: padding-box;  
+    transition: background .6s ease; 
+}
+
+.button.secondary-button:hover{ 
+    background: rgb(7, 238, 18);
+    background-clip: padding-box; 
+    color: white; 
+}
+@media only screen and (max-width: 500px) {
+    
+.title-text {  
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    font-family: var(--Cormorant);
+} 
+
+}
