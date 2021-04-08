@@ -1,9 +1,0 @@
-/*@font-face rules define custom fonts for use in your designs that aren't always available on all computers,
- so a browser downloads a font from the server and sets text in that custom font as if the user's computer had the font.*/ 
-
- /*@font-face*/ 
-
- @font-face { 
-     font-family: "CormorantGaramond"; 
-     src: '../fonts/CormorantGaramond-Bold.tff/'; 
-}
