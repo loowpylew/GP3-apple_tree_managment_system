@@ -50,44 +50,20 @@
  .Jobs2DoTable {
    margin-top: 5%; 
  }
+ #welcome-message{
+   font-weight: 500;
+   margin-left: -10%;  
+   margin-top: 10%; 
+   margin-bottom: -10%; 
+   font-size: 30px;
+ }
+ .navbar-toggler{
+   margin-top: -25%;
+   margin-left: -1340%;
+  }
 </style>
   </head>
-  <body>
-  <!-- =========================== Start Header Area =========================== -->
-  <header class="header_area">
-    <div class="main-menu">
-      <div class="navbar-static-top">
-        <div class="collapse" id="navbarToggleExternalContent">
-          <div class="bg-dark p-4">
-            <div class="navbar-nav">
-                  <li><a onclick="home()" class="nav-item nav-link active" href='<?php echo site_url('')?>'>Home<span class="sr-only">(current)</span></a></li>
-                  <li><a onclick="orders()" class="nav-item nav-link" href='<?php echo site_url('main/orders')?>'>Orders</a></li>
-                  <li><a onclick="items()" class="nav-item nav-link" href='<?php echo site_url('main/items')?>'>Items</a></li>
-                  <li><a onclick="customers()" class="nav-item nav-link" href='<?php echo site_url('main/customers')?>'>Customers</a></li>
-                  <li><a onclick="orderline()" class="nav-item nav-link" href='<?php echo site_url('main/orderline')?>'>OrderLine</a></li>
-                  <li><a onclick="appleVariety()" class="nav-item nav-link" href='<?php echo site_url('main/applevariety')?>'>Apple Variety</a></li>
-                  <li><a onclick="trees()" class="nav-item nav-link" href='<?php echo site_url('main/trees')?>'>Trees</a></li>
-                  <li><a onclick="orchard()" class="nav-item nav-link" href='<?php echo site_url('main/orchard')?>'>Orchard</a></li>
-                  <li><a onclick="treesPlanted()" class="nav-item nav-link" href='<?php echo site_url('main/treesPlanted')?>'>Trees Planted</a></li>
-                  
-
-            </div>
-          </div>
-        </div>
-        <nav class="navbar navbar-dark bg-dark">
-          <a class="navbar-brand" href="#">
-            <img src="assets/images/Apple_tree.jpg" width="100" height="100" class="d-inline-block align-top" alt="logo" loading="lazy">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-            
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          </a>
-        </nav>
-      </div>
-    </div>
-  </header>
-    <!-- =========================== End Header Area =========================== -->
-
+  <body>  
     <!-- =========================== Start Main Area =========================== -->
     <main class="site-main">      
       <!-- =========================== Start Banner Area =========================== -->
@@ -95,6 +71,14 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-6 col-md-12 site-title"> <!-- col-lg specifies compatabilty with desktop screens. Bootstrap allows for maxium of 12 column width size for text, here we are using 6. md is for medium devices, the 12 is used to componsate for the change in width of the screen -->
+            <?php
+              //if exists, user is already logged in 
+              if(isset($_SESSION["usersuid"])){
+               //echo "<li><a href='index.php/main/profilePage'>Profile</a></li>"; 
+               //echo "<li><a href='index.php/main/logOut' >Log Out</a></li>";
+               echo "<div id='welcome-message'><p>Hello there " .$_SESSION["usersuid"]. "</p></div>";
+               }  
+            ?> 
               <h1 class="title-text text-uppercase">HATS APPLE TREE SUPPLIERS</h1>
               <h2 class="title-text">Every apple helps</h2>
               <div class="site-buttons">
@@ -117,15 +101,20 @@
         </div>
       </section>
 
-      <textarea id="home" cols="0" rows="0">Home.</textarea>
-      <textarea id="orders" cols="0" rows="0">Orders.</textarea>
-      <textarea id="items" cols="0" rows="0">Items.</textarea>
-      <textarea id="customers" cols="0" rows="0">Customers.</textarea>
-      <textarea id="orderline" cols="0" rows="0">OrderLine.</textarea>
-      <textarea id="apple-variety" cols="0" rows="0">Apple Variety.</textarea>
-      <textarea id="trees" cols="0" rows="0">Trees.</textarea>
+      <textarea id="home" cols="0" rows="0">Home</textarea>
+      <textarea id="orders" cols="0" rows="0">Orders</textarea>
+      <textarea id="items" cols="0" rows="0">Items</textarea>
+      <textarea id="customers" cols="0" rows="0">Customers</textarea>
+      <textarea id="orderline" cols="0" rows="0">OrderLine</textarea>
+      <textarea id="apple-variety" cols="0" rows="0">Apple Variety</textarea>
+      <textarea id="trees" cols="0" rows="0">Trees</textarea>
       <textarea id="orchard" cols="0" rows="0">Orchard</textarea>
-      <textarea id="trees-planted" cols="0" rows="0">Trees Planted.</textarea>
+      <textarea id="trees-planted" cols="0" rows="0">Trees Planted</textarea>
+      <textarea id="sign-up" cols="0" rows="0">Sign up</textarea>
+      <textarea id="login" cols="0" rows="0">Log in</textarea>
+      <textarea id="logout" cols="0" rows="0">Log Out</textarea>
+      <textarea id="users" cols="0" rows="0">Users</textarea>
+      
 
       <textarea id="txt" cols="0" rows="0"  >What we are about? Here at Hatfields Tree suppliers,
        we offer a wide of range of tree varieties such as Plum, 
@@ -136,6 +125,7 @@
                                   Apple trees require pollination. While trees requiring a pollinator may seem like additional work, it’s really just a strength in numbers game. 
                                   Big or small orchard–here are tips on the best low-maintenance apple trees to plant in your garden or fill your small outdoor space with. </textarea>
         
+                                  
       <textarea id="Contact_information" cols="0" rows="0">You can call us directly on 076342212074 or you can email us at hatsappletreesuppliers@gmail.com</textarea>
       <textarea id="varieties" cols="0" rows="0">We offer: Ambassy, Blenheim Orange, Braeburn, Bramley, Decio, Golden Noble, Kidds, Underleaf</textarea>
       <textarea id="Refunds" cols="0" rows="0"> To request a refund, you can contact us via mobile/telephone or you can email us so that we can process your request or offer an alternative.</textarea>
@@ -334,140 +324,13 @@
             document.getElementById('phoneNumber').style.display = "none";
 
             document.getElementById('enterQuestion').style.display = "none";
+            
+            document.getElementById('sign-up').style.display = "none";
+            document.getElementById('login').style.display = "none";
+            document.getElementById('users').style.display = "none";
+            document.getElementById('logout').style.display = "none";
 
-            function home(){
-              var text = document.getElementById('home').value;
-              responsiveVoice.speak(text);
-            }
-            function orders(){
-              var text = document.getElementById('orders').value;
-              responsiveVoice.speak(text);
-            }
-            function items(){
-              var text = document.getElementById('items').value;
-              responsiveVoice.speak(text);
-            }
-            function customers(){
-              var text = document.getElementById('customers').value;
-              responsiveVoice.speak(text);
-            }
-            function orderline(){
-              var text = document.getElementById('orderline').value;
-              responsiveVoice.speak(text);
-            }
-            function treesPara(){
-              var text = document.getElementById('trees-Para').value;
-              responsiveVoice.speak(text);
-            }
-            function appleVariety(){
-              var text = document.getElementById('apple-variety').value;
-              responsiveVoice.speak(text);
-            }
-            function trees(){
-              var text = document.getElementById('trees').value;
-              responsiveVoice.speak(text);
-            }
-            function orchard(){
-              var text = document.getElementById('orchard').value;
-              responsiveVoice.speak(text);
-            }
-            function treesPlanted(){
-              var text = document.getElementById('trees-planted').value;
-              responsiveVoice.speak(text);
-            }
-
-            function speakTextAbout(){
-              var text = document.getElementById('txt').value;
-              responsiveVoice.speak(text);
-            }
-            function speakTextHelp(){
-              var text = document.getElementById('Help').value;
-              responsiveVoice.speak(text);
-            }
-            function speakTextUserGuide(){
-              var text = document.getElementById('User_Guide').value;
-              responsiveVoice.speak(text);
-            }
-            function speakTextContactInfo(){
-              var text = document.getElementById('Contact_information').value;
-              responsiveVoice.speak(text);
-            }
-            function speakTextVarieties(){
-              var text = document.getElementById('varieties').value;
-              responsiveVoice.speak(text);
-            }
-            function speakTextRefund(){
-              var text = document.getElementById('Refunds').value;
-              responsiveVoice.speak(text);
-            }
-            function speakTextAffectedTimes(){
-              var text = document.getElementById('delivery_times').value;
-              responsiveVoice.speak(text);
-            }
-            function speakTextSafeOrders(){
-              var text = document.getElementById('safe_orders').value;
-              responsiveVoice.speak(text);
-            }
-            function speakTextReduceContact(){
-              var text = document.getElementById('reduce_contact').value;
-              responsiveVoice.speak(text);
-            }
-
-            function speakTextDeliveries(){
-              var text = document.getElementById('deliveries').value;
-              responsiveVoice.speak(text);
-            }
-            function speakTextReturns(){
-              var text = document.getElementById('returns').value;
-              responsiveVoice.speak(text);
-            }
-
-            function introduction(){
-              var text = document.getElementById('introduction').value;
-              responsiveVoice.speak(text);
-            }
-            function jobs2DoNow(){
-              var text = document.getElementById('jobs2DoNow').value;
-              responsiveVoice.speak(text);
-            }
-            function grow(){
-              var text = document.getElementById('grow').value;
-              responsiveVoice.speak(text);
-            }
-            function feeding(){
-              var text = document.getElementById('feeding').value;
-              responsiveVoice.speak(text);
-            }
-            function prunning(){
-              var text = document.getElementById('pruning').value;
-              responsiveVoice.speak(text);
-            }
-            function plant(){
-              var text = document.getElementById('plant').value;
-              responsiveVoice.speak(text);
-            }
-
-            function ambassy(){
-              var text = document.getElementById('ambassy').value;
-              responsiveVoice.speak(text);
-            }
-            function blenheimOrange(){
-              var text = document.getElementById('blenheim-Orange').value;
-              responsiveVoice.speak(text);
-            }
-            function bramley(){
-              var text = document.getElementById('bramley').value;
-              responsiveVoice.speak(text);
-            }
-            function phoneNumber(){
-              var text = document.getElementById('phoneNumber').value;
-              responsiveVoice.speak(text);
-            }
-
-            function enterQuestion(){
-              var text = document.getElementById('enterQuestion').value;
-              responsiveVoice.speak(text);
-            }
+           
       </script>
 
     <script type="text/javascript">
@@ -662,6 +525,36 @@
                   });
                 });
 </script> 
+<script>
+        //document.getElementsById("test")[0].click();
+        window.onload = function(){
+            if(window.location.href == "http://localhost:8080/orders/index.php"){
+              document.getElementById('image-one').style.display = "none";
+              document.getElementById('image-two').style.display = "none";
+              document.getElementById('image-three').style.display = "none";
+              document.getElementById('image-four').style.display = "none";
+            }
+
+            if(window.location.href == "http://localhost:8080/orders/index.php#"){
+              document.getElementById('image-one').style.display = "none";
+              document.getElementById('image-two').style.display = "none";
+              document.getElementById('image-three').style.display = "none";
+              document.getElementById('image-four').style.display = "none";
+            }
+            if(window.location.href == "http://localhost:8080/orders/"){
+              document.getElementById('image-one').style.display = "none";
+              document.getElementById('image-two').style.display = "none";
+              document.getElementById('image-three').style.display = "none";
+              document.getElementById('image-four').style.display = "none";
+            }
+            if(window.location.href == "http://localhost:8080/orders/#"){
+              document.getElementById('image-one').style.display = "none";
+              document.getElementById('image-two').style.display = "none";
+              document.getElementById('image-three').style.display = "none";
+              document.getElementById('image-four').style.display = "none";
+            }
+          }
+    </script> 
 
   </body>
 </html>

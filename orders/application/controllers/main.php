@@ -30,25 +30,30 @@ class Main extends CI_Controller {
 		$crud->set_subject('Order');
 		
 		//the columns function lists attributes you see on frontend view of the table
-		$crud->columns('invoiceNo', 'date', 'custID', 'items');
+		$crud->columns('invoiceNo', 'custID','items', 'tree_ID', 'date');
 	
 		//the fields function lists attributes to see on add/edit forms.
 		//Note no inclusion of invoiceNo as this is auto-incrementing
-		$crud->fields('date', 'custID', 'items');
+		$crud->fields('date', 'custID', 'items', 'tree_ID');
 		
 		//set the foreign keys to appear as drop-down menus
 		// ('this fk column','referencing table', 'column in referencing table')
-		$crud->set_relation('custID','customers','custID');
+		$crud->set_relation('custID','users','usersUid');
 		
 		//many-to-many relationship with link table see grocery crud website: www.grocerycrud.com/examples/set_a_relation_n_n
 		//('give a new name to related column for list in fields here', 'join table', 'other parent table', 'this fk in join table', 'other fk in join table', 'other parent table's viewable column to see in field')
-		$crud->set_relation_n_n('items', 'order_items', 'items', 'invoice_no', 'item_id', 'itemDesc');
+		$crud->set_relation('items',  'apple_variety', 'fruit');
+
+		$crud->set_relation('tree_ID', 'trees', 'tree_ID');
 		
 		//form validation (could match database columns set to "not null")
-		$crud->required_fields('invoiceNo', 'date', 'custID');
+		$crud->required_fields('invoiceNo', 'date', 'custID', 'items', 'tree_ID');
 		
 		//change column heading name for readability ('columm name', 'name to display in frontend column header')
 		$crud->display_as('custID', 'CustomerID');
+		$crud->display_as('items', 'Item');
+		$crud->display_as('tree_ID', 'Tree ID');
+
 		
 		$output = $crud->render();
 		$this->orders_output($output);
@@ -144,9 +149,9 @@ class Main extends CI_Controller {
 		$crud->set_table('apple_variety');
 		$crud->set_subject('variety');
 
-		$crud->columns('variety_ID', 'fruit', 'fruit_colour');
-		$crud->fields('fruit', 'fruit_colour');
-		$crud->required_fields('fruit', 'fruit_colour');
+		$crud->columns('variety_ID', 'fruit', 'fruit_colour','season');
+		$crud->fields('variety_ID','fruit', 'fruit_colour', 'season');
+		$crud->required_fields('variety_ID','fruit', 'fruit_colour', 'season');
 
 		$output = $crud->render();
 		$this->appleVariety_output($output);
@@ -164,12 +169,15 @@ class Main extends CI_Controller {
 		$crud->set_theme('datatables');
 		$crud->set_table('trees');
 		$crud->set_subject('tree');
-		$crud->columns('tree_ID', 'variety_ID', 'retailPrice');
+		$crud->columns('tree_ID', 'variety_ID', 'retailPrice','OrchardLocations');
 		$crud->fields('retailPrice', 'variety_ID');
 		$crud->required_fields('retailPrice', 'variety_ID');
 
 		$crud->set_relation('variety_ID', 'apple_variety', 'fruit');
+		$crud->set_relation_n_n('OrchardLocations','trees_planted','orchard','tree_ID','orchard_ID','locationName');
 		$crud->display_as('variety_ID', 'Variety');
+		$crud->display_as('OrchardLocations', 'Orchard Locations');
+
 		
 		$output = $crud->render();
 		$this->tree_output($output);
@@ -192,6 +200,8 @@ class Main extends CI_Controller {
 		$crud->required_fields('locationName');
 		
 		$crud->display_as('variety_ID', 'Variety');
+		$crud->display_as('locationName', 'location Name');
+
 
 		$output = $crud->render();
 		$this->orchard_output($output);
@@ -213,10 +223,12 @@ class Main extends CI_Controller {
 		$crud->fields('tree_ID','orchard_ID', 'datePlanted');
 		$crud->required_fields('tree_ID','orchard_ID', 'datePlanted');
 		$crud->set_relation('tree_ID', 'trees', 'tree_ID');
-		$crud->set_relation('orchard_ID', 'orchard', 'orchard_ID');
-		
-		
 
+		$crud->set_relation('orchard_ID', 'orchard', 'locationName');
+
+		$crud->display_as('datePlanted', 'Date Planted');
+
+		$crud->display_as('orchard_ID', 'Location');
 		
 		$output = $crud->render();
 		$this->treesPlanted_output($output);
@@ -226,6 +238,8 @@ class Main extends CI_Controller {
 	{
 		$this->load->view('treesPlanted.php', $output);
 	}
+
+	
 
 	public function querynav()
 	{	
@@ -250,4 +264,50 @@ class Main extends CI_Controller {
 		$this->load->view('header');
 		$this->load->view('blank_view');
 	}
+
+	public function signUpPage()
+	{
+		$this->load->view('header');
+		$this->load->view('sign_up');
+	}
+	public function loginPage()
+	{
+		$this->load->view('header');
+		$this->load->view('login');
+		
+	}
+	public function signUpInc(){
+		$this->load->view('signup_inc');
+	}
+	public function loginInc(){ 
+		$this->load->view('login_inc');
+	}
+	public function users(){
+		$this->load->view('header');
+		$crud = new grocery_CRUD();
+		$crud->set_theme('datatables');
+		$crud->set_table('users');
+		$crud->set_subject('user');
+		$crud->columns('usersId', 'usersName', 'usersEmail', 'usersUid', 'usersPwd');
+		$crud->fields('usersId', 'usersName', 'usersEmail', 'usersUid', 'usersPwd');
+		$crud->required_fields('usersId','usersName', 'usersEmail', 'usersUid', 'usersPwd');
+		$crud->display_as('usersId', 'Users ID');
+		$crud->display_as('usersName', 'User Name');
+		$crud->display_as('usersEmail', 'Users Email');
+		$crud->display_as('usersUid', 'Users UID');
+		$crud->display_as('usersPwd', 'Users Password');
+		
+		$output = $crud->render();
+		$this->users_output($output);
+	}
+	
+	function users_output($output = null)
+	{
+		$this->load->view('users.php', $output);
+	}
+
+	public function logOut(){
+		$this->load->view('logout_inc');
+	}
+
 }

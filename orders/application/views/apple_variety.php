@@ -2,14 +2,19 @@
 <html>
 <head>
 	<meta charset="utf-8" />
-	<!--Boostrap css file is linked before the custom css file to overwrite the default properties of the bootsrap file-->
-    <!--Bootsrap css file-->
-    <link rel="stylesheet" href="../../assets/grocery_crud/css/added_css/bootstrap.min.css" type="text/css" /> 
-    <!--font awesome items-->
-    <!--Custom css file-->
-    <link rel="stylesheet" type="text/css" href="../../assets/grocery_crud/css/added_css/style.css?v=2"/>
-    <link rel="stylesheet" type="text/css" href="../../assets/grocery_crud/css/added_css/partials/_variables.css?v=2"/> 
-    <link rel="stylesheet" type="text/css" href="../../assets/grocery_crud/css/added_css/partials/_global.css?v=2"/> 
+	<!--Boostrap css file is linked before the custom css file to overwrite the default properties of the bootstrap file-->
+  <!--Bootsrap css file-->
+  <link rel="stylesheet" href="../../assets/grocery_crud/css/added_css/bootstrap.min.css" type="text/css"/>
+  <link rel="stylesheet" href="../../../assets/grocery_crud/css/added_css/bootstrap.min.css" type="text/css"/> 
+  <link rel="stylesheet" href="../../../../assets/grocery_crud/css/added_css/bootstrap.min.css" type="text/css"/> 
+  <!--font awesome items-->
+  <!--Custom css file-->
+  <link rel="stylesheet" type="text/css" href="../../assets/grocery_crud/css/added_css/style.css?v=2"/>
+  <link rel="stylesheet" type="text/css" href="../../../assets/grocery_crud/css/added_css/style.css?v=2"/>
+  <link rel="stylesheet" type="text/css" href="../../../../assets/grocery_crud/css/added_css/style.css?v=2"/>
+  
+  <link rel="stylesheet" type="text/css" href="../../assets/grocery_crud/css/added_css/partials/_variables.css?v=2"/> 
+  <link rel="stylesheet" type="text/css" href="../../assets/grocery_crud/css/added_css/partials/_global.css?v=2"/> 
 	<style>
 		h1 { text-align: center; 	font-family: Calibri; }
 
@@ -41,6 +46,29 @@
    #apple-variety-dbtable {
      margin-top: 5%; 
    }
+  #apple-one > img {
+    width: 10%; 
+    margin-top: 38%;
+    margin-left: 80%; 
+    margin-bottom: 0%;
+  }
+  #apple-two > img {
+    width: 10%; 
+    margin-top: 38%;
+    margin-left: 80%; 
+    margin-bottom: 0%;
+  }
+  #apple-three > img {
+    width: 10%; 
+    margin-top: 38%;
+    margin-left: 80%; 
+    margin-bottom: 0%;
+  }
+  .navbar-toggler{
+    margin-top: -25%;
+    margin-left: -1340%;
+  }
+
 	</style>
 <?php 
 foreach($css_files as $file): ?>
@@ -51,63 +79,38 @@ foreach($css_files as $file): ?>
 <?php endforeach; ?>
 </head>
 <body>
-<header class="header_area">
-    <div class="main-menu">
-      <div class="navbar-static-top">
-        <div class="collapse" id="navbarToggleExternalContent">
-          <div class="bg-dark p-4">
-            <div class="navbar-nav">
-            <li><a onclick="home()" class="nav-item nav-link active" href='<?php echo site_url('')?>'>Home<span class="sr-only">(current)</span></a></li>
-                  <li><a onclick="orders()" class="nav-item nav-link" href='<?php echo site_url('main/orders')?>'>Orders</a></li>
-                  <li><a onclick="items()" class="nav-item nav-link" href='<?php echo site_url('main/items')?>'>Items</a></li>
-                  <li><a onclick="customers()" class="nav-item nav-link" href='<?php echo site_url('main/customers')?>'>Customers</a></li>
-                  <li><a onclick="orderline()" class="nav-item nav-link" href='<?php echo site_url('main/orderline')?>'>OrderLine</a></li>
-                  <li><a onclick="appleVariety()" class="nav-item nav-link" href='<?php echo site_url('main/applevariety')?>'>Apple Variety</a></li>
-                  <li><a onclick="trees()" class="nav-item nav-link" href='<?php echo site_url('main/trees')?>'>Trees</a></li>
-                  <li><a onclick="orchard()" class="nav-item nav-link" href='<?php echo site_url('main/orchard')?>'>Orchard</a></li>
-                  <li><a onclick="treesPlanted()" class="nav-item nav-link" href='<?php echo site_url('main/treesPlanted')?>'>Trees Planted</a></li>
-            </div>
-          </div>
-        </div>
-        <nav class="navbar navbar-dark bg-dark">
-          <a class="navbar-brand" href="#">
-            <img src="../../assets/images/Apple_tree.jpg" width="100" height="100" class="d-inline-block align-top" alt="logo" loading="lazy">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-            
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          </a>
-        </nav>
-      </div>
-    </div>
-  </header>
 
-  <textarea id="home" cols="0" rows="0">Home.</textarea>
-  <textarea id="orders" cols="0" rows="0">Orders.</textarea>
-  <textarea id="items" cols="0" rows="0">Items.</textarea>
-  <textarea id="customers" cols="0" rows="0">Customers.</textarea>
-  <textarea id="orderline" cols="0" rows="0">OrderLine.</textarea>
-  <textarea id="apple-variety" cols="0" rows="0">Apple Variety.</textarea>
-  <textarea id="trees" cols="0" rows="0">Trees.</textarea>
+
+  <textarea id="home" cols="0" rows="0">Home</textarea>
+  <textarea id="orders" cols="0" rows="0">Orders</textarea>
+  <textarea id="items" cols="0" rows="0">Items</textarea>
+  <textarea id="customers" cols="0" rows="0">Customers</textarea>
+  <textarea id="orderline" cols="0" rows="0">OrderLine</textarea>
+  <textarea id="apple-variety" cols="0" rows="0">Apple Variety</textarea>
+  <textarea id="trees" cols="0" rows="0">Trees</textarea>
   <textarea id="orchard" cols="0" rows="0">Orchard</textarea>
-  <textarea id="trees-planted" cols="0" rows="0">Trees Planted.</textarea>
-
+  <textarea id="trees-planted" cols="0" rows="0">Trees Planted</textarea>
+  <textarea id="sign-up" cols="0" rows="0">Sign up</textarea>
+  <textarea id="login" cols="0" rows="0">Log in</textarea>
+  <textarea id="logout" cols="0" rows="0">Log Out</textarea>
+  <textarea id="users" cols="0" rows="0">Users</textarea>
+ 
   <textarea id="phoneNumber" cols="0" rows="0">(+44)07634212074</textarea>
 
                     
-  <textarea id="apple-variety-Para" cols="0" rows="0">Here in the 'Customers' page, you can enter details about the customer such as assigning a unique ID to name, address, 
-  phone number and email. You can add  new customers to the list via the 'Add customer' button on the top left of the orders table, you can individual customer details via the 'view' button,
-  you can change details about customers via the 'edit' button and you can delete details about customers 
-  by simply clicking on the 'delete' button </textarea>
+  <textarea id="apple-variety-Para" cols="0" rows="0">Here in the 'Apple Variety' page, you can enter details such as assigning a unique ID to a variety and assign a fruit which the variety produces with 
+    its relevant name and colour. You can add a new variety to the list via the 'Add variety' button on the top left of the orders table, you can view individual details about 
+    a particular variety via the 'view' button, you can change details about a particular variety via the 'edit' button and you can delete details about a particular variety 
+    by simply clicking on the 'delete' button </textarea>
 
   <div id="apple-variety"> 
    <h1>Apple Variety</h1>
   </div> 
 
 <div id="para"> 
-<p>Here in the 'Customers' page, you can enter details about the customer such as assigning a unique ID to name, address, phone number and email. You can add  new customers to the list 
-   via the 'Add customer' <br> button on the top left of the orders table, you can individual customer details via the 'view' button, you can change details about customers via the 'edit' 
-   button and you can delete details about customers by <br> simply clicking on the 'delete' button<input onclick="appleVarietyPara()" type="button" value="Speak"></p></div> 
+<p>Here in the 'Apple Variety' page, you can enter details such as assigning a unique ID to a variety and assign the fruit which the variety produces with its relevant name and colour. You can add a new variety 
+   to the list <br> via the 'Add variety' button on the top left of the orders table, you can view individual details about a particular variety via the 'view' button, you can change details about 
+   a particular variety via the 'edit' button and <br> you can delete details about a particular variety by simply clicking on the 'delete' button </textarea><input onclick="appleVarietyPara()" type="button" value="Speak"></p></div> 
 
     <div id="apple-variety-dbtable">
 		<?php echo $output; ?>
@@ -121,7 +124,16 @@ foreach($css_files as $file): ?>
               <div class="col-xl-6 col-lg-12 col-md-12">
                 <a href="http://localhost:8080/orders/index.php">
                  <div class="apple-link">
-                  <img src="../../assets/images/apple.png" alt="link-1">
+                  <div id="apple-one">
+                    <img src="../../assets/images/apple.png" alt="link-1">
+                   </div>
+                   <div id="apple-two">
+                    <img src="../../../assets/images/apple.png" alt="link-1">
+                   </div>
+                   <div id="apple-three">
+                    <img src="../../../../assets/images/apple.png" alt="link-1">
+                   </div>
+
                  </div>
                 </a>
               </div>
@@ -140,69 +152,75 @@ foreach($css_files as $file): ?>
             </div>
           </div>
         </section>
-
-    <script type="text/javascript" src="https://code.responsivevoice.org/responsivevoice.js"></script>
-    <script> 
-             document.getElementById('home').style.display = "none";
-             document.getElementById('orders').style.display = "none";
-             document.getElementById('items').style.display = "none";
-             document.getElementById('customers').style.display = "none";
-             document.getElementById('orderline').style.display = "none";
-             document.getElementById('apple-variety').style.display = "none";
-             document.getElementById('trees').style.display = "none";
-             document.getElementById('orchard').style.display = "none";
-             document.getElementById('trees-planted').style.display = "none";
-
-             document.getElementById('phoneNumber').style.display = "none";
-
-             document.getElementById('apple-variety-Para').style.display = "none";
-
-             function home(){
-              var text = document.getElementById('home').value;
-              responsiveVoice.speak(text);
-            }
-            function orders(){
-              var text = document.getElementById('orders').value;
-              responsiveVoice.speak(text);
-            }
-            function items(){
-              var text = document.getElementById('items').value;
-              responsiveVoice.speak(text);
-            }
-            function customers(){
-              var text = document.getElementById('customers').value;
-              responsiveVoice.speak(text);
-            }
-            function orderline(){
-              var text = document.getElementById('orderline').value;
-              responsiveVoice.speak(text);
-            }
-            function phoneNumber(){
-              var text = document.getElementById('phoneNumber').value;
-              responsiveVoice.speak(text);
-            }
-            function appleVarietyPara(){
-              var text = document.getElementById('apple-variety-Para').value;
-              responsiveVoice.speak(text);
-            }
-            function appleVariety(){
-              var text = document.getElementById('apple-variety').value;
-              responsiveVoice.speak(text);
-            }
-            function trees(){
-              var text = document.getElementById('trees').value;
-              responsiveVoice.speak(text);
-            }
-            function orchard(){
-              var text = document.getElementById('orchard').value;
-              responsiveVoice.speak(text);
-            }
-            function treesPlanted(){
-              var text = document.getElementById('trees-planted').value;
-              responsiveVoice.speak(text);
-            }
-
+        <script>
+            document.getElementById('home').style.display = "none";
+            document.getElementById('orders').style.display = "none";
+            document.getElementById('items').style.display = "none";
+            document.getElementById('customers').style.display = "none";
+            document.getElementById('orderline').style.display = "none";
+            document.getElementById('apple-variety').style.display = "none";
+            document.getElementById('trees').style.display = "none";
+            document.getElementById('orchard').style.display = "none";
+            document.getElementById('trees-planted').style.display = "none";
+            document.getElementById('sign-up').style.display = "none";
+            document.getElementById('login').style.display = "none";
+            document.getElementById('logout').style.display = "none";
+            document.getElementById('users').style.display = "none";
+          
+            document.getElementById('phoneNumber').style.display = "none";
+            document.getElementById('apple-variety-Para').style.display = "none";
+            
     </script> 
     <script src="../../assets/grocery_crud/js/added_js/bootstrap.min.js"></script>
+    <script src="../../../assets/grocery_crud/js/added_js/bootstrap.min.js"></script>
+    <script src="../../../../assets/grocery_crud/js/added_js/bootstrap.min.js"></script>
+    <script src="../../../../assets/grocery_crud/js/added_js/apple_variety_https.js"></script> 
+    <script>
+        window.onload = function(){
+            if(window.location.href == "http://localhost:8080/orders/index.php/main/applevariety"){
+              document.getElementById('image-zero').style.display = "none";
+              document.getElementById('image-two').style.display = "none";
+              document.getElementById('image-three').style.display = "none";
+              document.getElementById('image-four').style.display = "none";
+              document.getElementById('apple-two').style.display = "none";
+              document.getElementById('apple-three').style.display = "none";
+            }
+            if(window.location.href == "http://localhost:8080/orders/index.php/main/applevariety/add"){
+              document.getElementById('image-zero').style.display = "none";
+              document.getElementById('image-one').style.display = "none"; 
+              document.getElementById('image-three').style.display = "none";
+              document.getElementById('image-four').style.display = "none";
+              document.getElementById('apple-one').style.display = "none";
+              document.getElementById('apple-three').style.display = "none";
+            }
+            
+            /////////////////////////////////////////////////////////////////////////////////////////////
+            if(location.href == "http://localhost:8080/orders/index.php/main/applevariety#"){
+              document.getElementById('image-zero').style.display = "none";
+              document.getElementById('image-two').style.display = "none";
+              document.getElementById('image-three').style.display = "none";
+              document.getElementById('image-four').style.display = "none";
+              document.getElementById('apple-two').style.display = "none";
+              document.getElementById('apple-three').style.display = "none";
+            }
+            if(window.location.href == "http://localhost:8080/orders/index.php/main/applevariety/add#"){
+              document.getElementById('image-zero').style.display = "none";
+              document.getElementById('image-one').style.display = "none"; 
+              document.getElementById('image-three').style.display = "none";
+              document.getElementById('image-four').style.display = "none";
+              document.getElementById('apple-one').style.display = "none";
+              document.getElementById('apple-three').style.display = "none";
+            }
+            if(window.location.href == "http://localhost:8080/orders/index.php/main/applevariety/success"){
+              document.getElementById('image-zero').style.display = "none";
+              document.getElementById('image-one').style.display = "none"; 
+              document.getElementById('image-three').style.display = "none";
+              document.getElementById('image-four').style.display = "none";
+              document.getElementById('apple-one').style.display = "none";
+              document.getElementById('apple-three').style.display = "none";
+            }
+              
+        }
+    </script> 
 </body>
 </html>
